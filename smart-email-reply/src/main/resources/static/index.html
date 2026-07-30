@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AI Email Reply Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Smart AI Email Reply Assistant</h1>
+
+    <label for="emailContent">
+        Paste Email Content
+    </label>
+
+    <textarea
+            id="emailContent"
+            placeholder="Paste email content here...">
+    </textarea>
+
+    <label for="tone">
+        Select Tone
+    </label>
+
+    <select id="tone">
+
+        <option value="Professional">Professional</option>
+        <option value="Friendly">Friendly</option>
+        <option value="Formal">Formal</option>
+        <option value="Casual">Casual</option>
+        <option value="Polite">Polite</option>
+        <option value="Confident">Confident</option>
+
+    </select>
+
+    <button onclick="generateReply()">
+        Generate Reply
+    </button>
+
+    <p id="loading"></p>
+
+    <label for="subject">
+        Generated Subject
+    </label>
+
+    <input
+            type="text"
+            id="subject"
+            placeholder="AI generated subject"
+            readonly>
+
+    <label for="reply">
+        Generated Reply
+    </label>
+
+    <textarea
+            id="reply"
+            placeholder="AI generated reply will appear here"
+            readonly>
+    </textarea>
+
+    <button onclick="copyReply()">
+        Copy Reply
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
